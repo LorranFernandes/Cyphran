@@ -10,7 +10,7 @@ export const swaggerOptions: Options = {
         },
         servers: [
             {
-                url: 'http://localhost:3000',
+                url: `http://localhost:${process.env.PORT || 3333}`,
                 description: 'Servidor de Desenvolvimento Local'
             }
         ],
